@@ -1,7 +1,7 @@
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/xiaomi/dirac
+    vendor/dirac
 
-VENDOR_PATH := vendor/xiaomi/dirac
+VENDOR_PATH := vendor/dirac
 
 PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/audiosphere.xml \
@@ -18,4 +18,4 @@ PRODUCT_PACKAGES += \
     XiaomiDirac \
 
 # Props ($PATH_PROP)
-TARGET_PRODUCT_PROP += $(VENDOR_PATH)/dirac.prop
+TARGET_VENDOR_PROP += $(VENDOR_PATH)/dirac.prop
